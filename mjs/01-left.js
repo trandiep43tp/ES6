@@ -1,6 +1,7 @@
-console.log("ABC");
+//console.log("ABC");
 //alert("xin chào");
 $(document).ready(function(){
+	/*
 	$('#DRAW').click(function(){
 		var p="";
 		for(var i=1; i<10;i++){			
@@ -9,7 +10,13 @@ $(document).ready(function(){
 		
 		$('#mContent').html(p);		
 	});
-
+	*/
+	$("#DRAW").click(function(){
+		for (var i = 1; i < 10; i++) {
+			$("#mContent").append("<p>"+i+"</p>");
+		}
+		
+	});
 
 	$('#CLEAR').click(function(){
 
@@ -17,9 +24,9 @@ $(document).ready(function(){
 		//var m=$('#mContent').html();  //lấy giá trì
 		
 		//gán 
-		//$('#mContent').html("");
+		$('#mContent').html("");
 		//$("p").hide(5000);
-		$("p").toggle();
+		//$("p").toggle();
 	});
 
 	$("p").on({
