@@ -1,5 +1,4 @@
-//console.log("ABC");
-//alert("xin chào");
+
 $(document).ready(function(){
 	/*
 	$('#DRAW').click(function(){

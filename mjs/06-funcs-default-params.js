@@ -7,7 +7,7 @@ function show(name="diep",price="26"){
 }
 
 $(document).ready(function(){
-	$("#mContent").css("color","#0174DF");
+	//$("#mContent").css("color","#0174DF");
 	//$("#mContent").html(show());  //khi không truyền giá trị
-	$("#mContent").html(show("hùng", 30));  //khi truyền giá trị
+	//$("#mContent").html(show("hùng", 30));  //khi truyền giá trị
 });
