@@ -8,7 +8,7 @@ class person {
 
 	//phương thức của đối tượng
 	showinfo(){
-		return "Ma so:  "+ this.masv + "  Ten:  " + this.name +  "  Tuoi:  " + this.getage();
+		console.log("Ma so:  "+ this.masv + "  Ten:  " + this.name +  "  Tuoi:  " + this.getage());
 	}
 
 	getage(){
@@ -24,11 +24,16 @@ class student1 extends person {
 		super(masv,name,age);   //gọi lại đối tượng
 		this.diem=diem;
 	}
+
+	showinfo(){
+		super.showinfo();
+		console.log( " diem: " + this.diem);		
+	}
 }
 
 
-var nguoi= new person("sv001","diep",1983);
-console.log(nguoi.showinfo());
+var nguoi= new person("sv","dương",2015);
+nguoi.showinfo();
 
-var sv= new student1("sv001","diep",1983,7);
-console.log(nguoi.showinfo());
+var sv= new student1("sv002","Hai dang",2011,7);
+sv.showinfo(); 
