@@ -1,20 +1,20 @@
 //khai báo một lớp
-class student {
+class student {	
 	constructor(masv,name,age){
-		this.masv=masv;
-		this.name=name;
-		this.age=age;
+		this.ma=masv;
+		this.ten=name;
+		this.tuoi=age;
 	}
 
 	//phương thức của đối tượng
 	showinfo(){
-		return "Ma so:  "+ this.masv + "  Ten:  " + this.name +  "  Tuoi:  " + this.getage();
+		return "Ma so:  "+ this.ma + "  Ten:  " + this.ten +  "  Tuoi:  " + this.getage();
 	}
 
 	getage(){
 		let today= new Date();
 		let year=today.getFullYear();
-		return year-this.age;
+		return year-this.tuoi;
 
 	}
 }
